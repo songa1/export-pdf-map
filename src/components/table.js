@@ -52,8 +52,8 @@ const TableComponent = () => {
         <div className="container">
             <div></div>
             <div>
-                <h4 class="text-center text-wrap bd-highlight text-uppercase">List of countries and data.</h4>
-                {countries.length === 0 ? <Badge class="text-center text-wrap bd-highlight primary" pill variant="primary">You currently have no countries.</Badge> :
+                <h4 className="text-center text-wrap bd-highlight text-uppercase">List of countries and data.</h4>
+                {countries.length === 0 ? <Badge className="text-center text-wrap bd-highlight primary" pill variant="primary">You currently have no countries.</Badge> :
                 <Table striped bordered hover size="sm">
                     <thead>
                         <tr>
@@ -74,44 +74,44 @@ const TableComponent = () => {
                         ))}
                     </tbody>
                 </Table>}
-                <Table striped bordered hover size="sm" id="pdfdiv">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Country</th>
-                        <th>President</th>
-                        <th>Score</th>
-                        <th>Priority</th>
-                        <th>Responsibility</th>
-                        <th>Timeline</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7" className="text-center font-weight-bold">XXX Policy</td>
-                    </tr>
-                        <tr key={xtab.id}>
-                            <td>{xtab.id}</td>
-                            <td>{xtab.country}</td>
-                            <td>{xtab.president}</td>
-                            <td>{xtab.score}</td>
-                            <td>{xtab.priority}</td>
-                            <td>{xtab.responsible}</td>
-                            <td>{xtab.timeline}</td>
-                        </tr>
-                    <tr>
-                        <td colspan="7" className="text-center font-weight-bold">YYY Policy</td>
-                    </tr>
+                <Table striped bordered hover size="sm" id="pdfdiv" >
+                    <thead>
                         <tr>
-                            <td>{ytab.id}</td>
-                            <td>{ytab.country}</td>
-                            <td>{ytab.president}</td>
-                            <td>{ytab.score}</td>
-                            <td>{ytab.priority}</td>
-                            <td>{ytab.responsible}</td>
-                            <td>{ytab.timeline}</td>
+                            <th>#</th>
+                            <th>Country</th>
+                            <th>President</th>
+                            <th>Score</th>
+                            <th>Priority</th>
+                            <th>Responsibility</th>
+                            <th>Timeline</th>
                         </tr>
-                </tbody>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colSpan="7" className="text-center font-weight-bold">XXX Policy</td>
+                        </tr>
+                            <tr key={xtab.id}>
+                                <td>{xtab.id}</td>
+                                <td>{xtab.country}</td>
+                                <td>{xtab.president}</td>
+                                <td>{xtab.score}</td>
+                                <td>{xtab.priority}</td>
+                                <td>{xtab.responsible}</td>
+                                <td>{xtab.timeline}</td>
+                            </tr>
+                        <tr>
+                            <td colSpan="7" className="text-center font-weight-bold">YYY Policy</td>
+                        </tr>
+                            <tr>
+                                <td>{ytab.id}</td>
+                                <td>{ytab.country}</td>
+                                <td>{ytab.president}</td>
+                                <td>{ytab.score}</td>
+                                <td>{ytab.priority}</td>
+                                <td>{ytab.responsible}</td>
+                                <td>{ytab.timeline}</td>
+                            </tr>
+                    </tbody>
                 </Table>
             </div>
             <div></div>

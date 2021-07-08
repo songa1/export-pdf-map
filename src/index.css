@@ -1,4 +1,5 @@
 @import 'bootstrap/dist/css/bootstrap.css';
+@import 'svgmap/dist/svgMap.min.css';
 
 body {
   margin: 0;
